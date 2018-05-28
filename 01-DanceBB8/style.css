@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Play');
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+html {
+  font-size: 10px;
+    background-color: #FFA33F;
+/*
+  background-image: url(http://i.imgur.com/l5hja6x.jpg);
+  background-size: cover;
+*/
+
+}
+body,html {
+  margin: 0;
+  padding: 0;
+font-family: 'Play', sans-serif;
+	
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+h1 {
+    color: #505163;
+    font-size: 5rem;
+    text-align: center;
+}
+.row {
+  display: flex;
+  flex: 1;
+/*  height: 30vh;*/
+  align-items: center;
+  justify-content: center;
+	flex-wrap: wrap;
+	width: 50vw;
+	margin: 0 auto 0;
+}
+
+.key {
+  border: 1px solid white;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 3rem;
+  text-align: center;
+  color: white;
+  background: rgba(255,255,255,0.2);
+}
+.key[data-key="32"]{
+    flex-grow: 1;
+    display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.playing {
+  transform: scale(1.1);
+		  border-color: #FFA33F;
+  box-shadow: 0 0 1rem #FFA33F;
+}
+.pushed {
+  opacity: .5;
+}
+
+kbd {
+  display: block;
+  font-size: 2rem;
+    font-weight: 400;
+}
+.pause {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: space-between;
+  margin-left: 10px; 
+}
+.pause:hover, .play:hover {
+  cursor: pointer;
+}
+
+.pause:focus,.pause:active,
+.play:focus,.play:active{
+  opacity: .5;
+  outline: none;
+}
+.pause span{
+height: 100%;
+width: 50%;
+background-color: #fff;
+display: block;
+}
+.pause span:first-child{
+  margin-right: 10px;
+}
+
+.play{
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 15px 0 15px 26.0px;
+border-color: transparent transparent transparent #ffffff;
+margin-left: 10px; 
+}
+/* SVG */
+#BB8 {
+  margin: 30px auto;
+display: block;
+}
+#Body{
+    -webkit-animation-name: spin;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-transition: rotate(3600deg);
+  transform-origin: 154px 282px;
+}
+
+.cls-1,
+        .cls-15,
+        .cls-21,
+        .cls-22,
+        .cls-25,
+        .cls-26,
+        .cls-27,
+        .cls-28,
+        .cls-29,
+        .cls-30,
+        .cls-31,
+        .cls-33 {
+          fill: none;
+        }
+
+        .bb8 {
+          /*        isolation: isolate;*/
+          left: 50%;
+        }
+
+        .cls-3 {
+          fill: #fff;
+        }
+
+        .cls-4 {
+          fill: #6f6e70;
+        }
+
+        .cls-5 {
+          fill: #565656;
+        }
+
+        .cls-6 {
+          fill: #fbb03b;
+        }
+
+        .cls-7 {
+          fill: #29abe2;
+        }
+
+        .cls-8 {
+          fill: #fcee21;
+        }
+
+        .cls-9 {
+          fill: #f7931e;
+        }
+
+        .cls-10,
+        .cls-23 {
+          fill: #48363c;
+        }
+
+        .cls-11 {
+          fill: #ddd;
+        }
+
+        .cls-12 {
+          fill: #969696;
+        }
+
+        .cls-13 {
+          fill: #3ec7d5;
+        }
+
+        .cls-14 {
+          fill: #ff933f;
+        }
+
+        .cls-15,
+        .cls-23 {
+          stroke: #48363c;
+        }
+
+        .cls-15,
+        .cls-21,
+        .cls-25,
+        .cls-27,
+        .cls-28,
+        .cls-30,
+        .cls-31 {
+          stroke-miterlimit: 10;
+        }
+
+        .cls-16 {
+          fill: url(#radial-gradient);
+        }
+
+        .cls-17 {
+          fill: red;
+        }
+
+        .cls-18 {
+          fill: url(#radial-gradient-2);
+        }
+
+        .cls-19 {
+          mix-blend-mode: multiply;
+        }
+
+        .cls-20 {
+          clip-path: url(#clip-path);
+        }
+
+        .cls-21,
+        .cls-25,
+        .cls-27,
+        .cls-30,
+        .cls-31 {
+          stroke: #ddd;
+        }
+
+        .cls-21,
+        .cls-22,
+        .cls-23,
+        .cls-25,
+        .cls-26,
+        .cls-27,
+        .cls-28,
+        .cls-29,
+        .cls-30,
+        .cls-31,
+        .cls-33 {
+          stroke-linecap: round;
+        }
+
+        .cls-21 {
+          stroke-width: 25px;
+        }
+
+        .cls-22,
+        .cls-26,
+        .cls-29 {
+          stroke: #afafaf;
+        }
+
+        .cls-22,
+        .cls-23,
+        .cls-26,
+        .cls-29,
+        .cls-33 {
+          stroke-linejoin: round;
+        }
+
+        .cls-22 {
+          stroke-width: 14px;
+        }
+
+        .cls-23 {
+          stroke-width: 0.25px;
+        }
+
+        .cls-24 {
+          clip-path: url(#clip-path-2);
+        }
+
+        .cls-25 {
+          stroke-width: 46px;
+        }
+
+        .cls-26 {
+          stroke-width: 12px;
+        }
+
+        .cls-27 {
+          stroke-width: 9px;
+        }
+
+        .cls-28 {
+          stroke: #c9a687;
+        }
+
+        .cls-28,
+        .cls-33 {
+          stroke-width: 7px;
+        }
+
+        .cls-29 {
+          stroke-width: 20px;
+        }
+
+        .cls-30 {
+          stroke-width: 16px;
+        }
+
+        .cls-31 {
+          stroke-width: 10px;
+        }
+
+        .cls-32 {
+          mix-blend-mode: soft-light;
+        }
+
+        .cls-33 {
+          stroke: #fff;
+        }
